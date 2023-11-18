@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Space Grotesk', sans-serif;
+}
+label{
+    color: hsl(278, 68%, 11%);
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+form input{
+    width: 100%;
+    padding: 13px;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+form input:invalid{
+    border: 1px solid gray;
+}
+form input:valid{
+    border: 1px solid rgb(95, 95, 193);
+}
+button{
+    padding: 20px;
+    background: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+#top{
+    background: hsl(278, 68%, 11%);
+    height: 35vh;
+    color: white;
+    padding: 20px;
+}
+#card-details-front{
+    background: url(./images/bg-card-front.png);
+    /* background-color: black; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    top: 85px;
+    padding: 20px;
+}
+#card-details-front #card-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -70%;
+}
+#card-text #card-number{
+    font-size: 20px;
+}
+#card-text aside{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+#card-details-back{
+    background: url(./images/bg-card-back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 270px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 10px;
+    float: right;
+}
+#card-details-back #cvc{
+    position: relative;
+    top: 42%;
+    left: 205px;
+    font-size: 12px;
+}
+section#bottom{
+    margin-top: 80px;
+}
+#bottom aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#bottom .date{
+    display: flex;
+    gap: 5px;
+}
+#bottom .date-container{
+    display: flex;
+    flex-direction: column;
+}
+#bottom .date input{
+    width: 80px;
+}
+#bottom .cvc{
+    display: flex;
+    flex-direction: column;
+}
+#bottom .cvc input{
+    width: 150px;
+}
